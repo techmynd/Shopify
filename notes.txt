@@ -2,3 +2,43 @@ shopify dropshipping
 
 https://www.oberlo.com/
 
+======================= 
+
+theme development
+=================
+
+https://www.shopify.com/partners/shopify-cheat-sheet
+http://shopify.github.io/liquid/
+https://ecommerce.shopify.com/
+
+https://www.youtube.com/watch?v=h7C4BTNK64U
+
+https://www.youtube.com/watch?v=36Rfv_TeQRY
+https://www.youtube.com/watch?v=6zvk0qzeR5M
+
+
+
+
+https://www.npmjs.com/package/@shopify/slate
+https://shopify.github.io/slate/
+
+
+> npm install -g @shopify/slate
+> npm install -g @shopify/slate-tools
+
+> slate theme <theme-name>
+
+> slate build
+> slate start
+
+other commands
+==============
+> slate test
+> slate zip 
+
+https://localhost:3002
+
+
+
+
+
