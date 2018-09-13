@@ -1,0 +1,18 @@
+https://shopify.github.io/themekit/
+
+10 steps to create shopigy theme locally
+https://www.cadence-labs.com/2018/03/10-step-guide-local-shopify-theme-development-using-slate/
+
+https://help.shopify.com/en/manual/using-themes/theme-structure
+https://help.shopify.com/en/themes/liquid/tags/theme-tags#include
+
+commands
+========
+
+for dev environment
+-------------------
+npm run start:dev
+
+for production environment
+-------------------
+npm run start:prod
