@@ -1,0 +1,50 @@
+{% if section.settings.pgheader %}
+  <div id="pg-header-wrap">
+      <div class="pg-header-class" style="background-image: url('{{ section.settings.pgheaderbg | img_url: '1600x' }}');">
+        
+        <div class="txt-header">
+          {% if section.settings.pgheader != blank %}
+            {{ section.settings.pgheader }}
+          {% endif %}
+        </div>
+        
+        {% comment %}
+          {% if section.settings.pgheaderbg != blank %}
+            <img src="{{ section.settings.pgheaderbg | img_url: '1600x' }}">
+          {% endif %}
+        {% endcomment %}
+        
+      </div>
+  </div>
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "Page Header",
+    "settings": [
+		{
+          "id": "pgheader",
+          "type": "text",
+          "label": "Title",
+          "default": "Hello world"
+      	},
+		{
+          "id": "pgheaderbg",
+          "type": "image_picker",
+          "label": "Background Image"
+      	}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+  .main-content {
+      padding-top: 0;
+  }
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+
