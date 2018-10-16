@@ -1,0 +1,25 @@
+{% if section.settings.sectionVisibility2 == true %}
+...
+{% endif %}
+
+
+scheme for checkbox
+----------------------
+{
+"id": "sectionVisibility2",
+"type": "checkbox",
+"label": "Show This Section",
+"default": true
+}
+
+
+conditions
+----------
+https://help.shopify.com/en/themes/liquid/basics/operators
+
+
+if not empty
+-------------
+{% if section.settings.sectionBlockButtonLink2 and section.settings.sectionBlockButtonText2 %}
+...
+{% endif %}

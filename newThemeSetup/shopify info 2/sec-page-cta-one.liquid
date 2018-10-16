@@ -1,0 +1,123 @@
+{% if section.settings.ctaOneVisibility == true %}
+<div class="sec-page-cta-one">
+  	<div class="{{section.settings.ctaOneWrapper}}">
+		<h2>{{ section.settings.ctaOneTitle }}</h2>
+    	<div class="cta-one-details">{{ section.settings.ctaOneDetail }}</div>
+      	{% if section.settings.ctaButtonLink and section.settings.ctaButtonText %}
+          	<a href="{{section.settings.ctaButtonLink}}" class="btn btn-default btn-cta-one">{{section.settings.ctaButtonText}}</a>
+        {% endif %}
+    </div>
+</div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Page CTA One",
+    "settings": [
+		{
+          "id": "ctaOneTitle",
+          "type": "text",
+          "label": "CTA Title"
+      	},
+		{
+          "id": "ctaOneDetail",
+          "type": "textarea",
+          "label": "CTA Details"
+      	},
+		{
+          "id": "ctaOneHeadingFontSize",
+          "type": "text",
+          "label": "CTA Heading Font Size",
+		  "default": "30"
+      	},
+		{
+          "id": "ctaOneFontSize",
+          "type": "text",
+          "label": "Text Font Size",
+		  "default": "16"
+      	},
+		{
+          "id": "ctaOneAlignment",
+          "type": "select",
+		  "options": [
+          	{ "value": "center", "label": "Center"},
+            { "value": "left", "label": "Left"},
+            { "value": "right", "label": "Right"}
+   		  ],
+		  "label": "Text Alignment"	
+      	},
+		{
+          "id": "ctaOneMarginTop",
+          "type": "text",
+          "label": "CTA Top Margin",
+		  "default": "80"
+      	},
+		{
+          "id": "ctaOneMarginBottom",
+          "type": "text",
+          "label": "CTA Bottom Margin",
+		  "default": "80"
+      	},
+		{
+          "id": "ctaOneBgColor",
+          "type": "color",
+          "label": "CTA Background Color",
+		  "default": "#ffffff"
+      	},
+		{
+          "id": "ctaOneWrapper",
+          "type": "select",
+		  "options": [
+          	{ "value": "container", "label": "Container"},
+            { "value": "container-fluid", "label": "Container Fluid"},
+            { "value": "full-width", "label": "Full Width"}
+   		  ],
+		  "label": "CTA Wrapper"	
+      	},
+		{
+          "id": "ctaButtonText",
+          "type": "text",
+          "label": "CTA Button Text"
+      	},
+		{
+          "id": "ctaButtonLink",
+          "type": "url",
+          "label": "Button Link"
+      	},
+		{
+          "id": "ctaOneVisibility",
+          "type": "checkbox",
+          "label": "Show This Section",
+		  "default": true
+      	}
+	]
+  }
+
+{% endschema %}
+
+<style>
+  .sec-page-cta-one {
+  	padding-top: {{ section.settings.ctaOneMarginTop }}px;
+    padding-bottom: {{ section.settings.ctaOneMarginBottom }}px;
+    background-color: {{ section.settings.ctaOneBgColor }};
+    text-align: {{ section.settings.ctaOneAlignment }};
+  }
+  .sec-page-cta-one h2 {
+	font-size: {{ section.settings.ctaOneHeadingFontSize }}px;
+	text-align: {{ section.settings.ctaOneAlignment }};
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    letter-spacing: 1px;
+  }
+  .sec-page-cta-one .cta-one-details {
+	font-size: {{ section.settings.ctaOneFontSize }}px;
+    text-align: {{ section.settings.ctaOneAlignment }};
+  }
+  .btn-cta-one { margin-top: 30px; }
+</style>  
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

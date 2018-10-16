@@ -1,0 +1,134 @@
+{% if section.settings.sectionVisibility == true %}
+<div class="content-block-wrap {{section.settings.sectionBlockOrientation}}">
+  <div class="{{section.settings.sectionBlockWrapper}}">
+    <div class="row align-items-center h-100">
+      <div class="col-md-6 col-txt">
+        <div class="txt-space">
+          <h3>{{section.settings.sectionBlockTextCaption}}</h3>
+          <p>{{section.settings.sectionBlockText}}</p>
+          {% if section.settings.sectionBlockButtonLink and section.settings.sectionBlockButtonText %}
+          	<a href="{{section.settings.sectionBlockButtonLink}}" class="btn btn-default">{{section.settings.sectionBlockButtonText}}</a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-md-6 col-img">
+          <img src="{{section.settings.sectionBlockImage | img_url: '1600x'}}" class="img-fluid d-block mx-auto">
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% schema %}
+{
+    "name": "Content Block One",
+    "settings": [
+		{
+          "id": "sectionBlockTextCaption",
+          "type": "text",
+          "label": "Caption",
+		  "default": "Section Title"	
+      	},
+		{
+          "id": "sectionBlockText",
+          "type": "richtext",
+          "label": "Content Block Text"
+      	},
+		{
+          "id": "sectionBlockTextSpaceLeft",
+          "type": "text",
+          "label": "Block Text Space (Left)"
+      	},
+		{
+          "id": "sectionBlockTextSpaceRight",
+          "type": "text",
+          "label": "Block Text Space (Right)"
+      	},
+		{
+          "id": "sectionBlockTextAlignment",
+          "type": "select",
+		  "options": [
+          	{ "value": "center", "label": "Center"},
+            { "value": "left", "label": "Left"},
+			{ "value": "right", "label": "Right"}
+   		  ],
+		  "label": "Text Alignment"
+      	},
+		{
+          "id": "sectionBlockImage",
+          "type": "image_picker",
+          "label": "Content Block Image"
+      	},
+		{
+          "id": "sectionBlockOrientation",
+          "type": "select",
+		  "options": [
+          	{ "value": "image-left", "label": "Image To Left"},
+            { "value": "image-right", "label": "Image To Right"}
+   		  ],
+		  "label": "Image Placement"
+      	},
+		{
+          "id": "sectionBlockWrapper",
+          "type": "select",
+		  "options": [
+          	{ "value": "container", "label": "Container"},
+            { "value": "container-fluid", "label": "Container Fluid"},
+            { "value": "full-width", "label": "Full Width"}
+   		  ],
+		  "label": "Section Wrapper"
+      	},
+		{
+          "id": "sectionBlockMarginTop",
+          "type": "text",
+          "label": "Section Top Space",
+		  "default": "80"
+      	},
+		{
+          "id": "sectionBlockMarginBottom",
+          "type": "text",
+          "label": "Section Bottom Space",
+		  "default": "80"
+      	},
+		{
+          "id": "sectionBlockButtonText",
+          "type": "text",
+          "label": "Section Button Text",
+		  "default": "Learn More"
+      	},
+		{
+          "id": "sectionBlockButtonLink",
+          "type": "url",
+          "label": "Button Link"
+      	},
+		{
+          "id": "sectionVisibility",
+          "type": "checkbox",
+          "label": "Show This Section",
+		  "default": true
+      	}
+	]
+}
+{% endschema %}
+
+<style>
+  .content-block-wrap {
+    padding-top: {{section.settings.sectionBlockMarginTop}}px;
+    padding-bottom: {{section.settings.sectionBlockMarginBottom}}px;
+  }
+  .content-block-wrap .txt-space {
+    padding-left:{{section.settings.sectionBlockTextSpaceLeft}}px;
+    padding-right:{{section.settings.sectionBlockTextSpaceRight}}px;
+    text-align: {{section.settings.sectionBlockTextAlignment}};
+  }
+  .content-block-wrap.image-left .col-txt {order: 2;}
+  .content-block-wrap.image-left .col-img {order: 1;}
+  .content-block-wrap.image-right .col-txt {order: 1;}
+  .content-block-wrap.image-right .col-img {order: 2;}
+</style>
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,134 @@
+{% if section.settings.sectionVisibility2 == true %}
+<div class="content-block-wrap2 {{section.settings.sectionBlockOrientation2}}">
+  <div class="{{section.settings.sectionBlockWrapper2}}">
+    <div class="row align-items-center h-100">
+      <div class="col-md-6 col-txt">
+        <div class="txt-space">
+          <h3>{{section.settings.sectionBlockTextCaption2}}</h3>
+          <p>{{section.settings.sectionBlockText2}}</p>
+          {% if section.settings.sectionBlockButtonLink2 and section.settings.sectionBlockButtonText2 %}
+          	<a href="{{section.settings.sectionBlockButtonLink2}}" class="btn btn-default">{{section.settings.sectionBlockButtonText2}}</a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-md-6 col-img">
+          <img src="{{section.settings.sectionBlockImage2 | img_url: '1600x'}}" class="img-fluid d-block mx-auto">
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% schema %}
+{
+    "name": "Content Block Two",
+    "settings": [
+		{
+          "id": "sectionBlockTextCaption2",
+          "type": "text",
+          "label": "Caption",
+		  "default": "Section Title"	
+      	},
+		{
+          "id": "sectionBlockText2",
+          "type": "richtext",
+          "label": "Content Block Text"
+      	},
+		{
+          "id": "sectionBlockTextSpaceLeft2",
+          "type": "text",
+          "label": "Block Text Space (Left)"
+      	},
+		{
+          "id": "sectionBlockTextSpaceRight2",
+          "type": "text",
+          "label": "Block Text Space (Right)"
+      	},
+		{
+          "id": "sectionBlockTextAlignment2",
+          "type": "select",
+		  "options": [
+          	{ "value": "center", "label": "Center"},
+            { "value": "left", "label": "Left"},
+			{ "value": "right", "label": "Right"}
+   		  ],
+		  "label": "Text Alignment"
+      	},
+		{
+          "id": "sectionBlockImage2",
+          "type": "image_picker",
+          "label": "Content Block Image"
+      	},
+		{
+          "id": "sectionBlockOrientation2",
+          "type": "select",
+		  "options": [
+          	{ "value": "image-left", "label": "Image To Left"},
+            { "value": "image-right", "label": "Image To Right"}
+   		  ],
+		  "label": "Image Placement"
+      	},
+		{
+          "id": "sectionBlockWrapper2",
+          "type": "select",
+		  "options": [
+          	{ "value": "container", "label": "Container"},
+            { "value": "container-fluid", "label": "Container Fluid"},
+            { "value": "full-width", "label": "Full Width"}
+   		  ],
+		  "label": "Section Wrapper"
+      	},
+		{
+          "id": "sectionBlockMarginTop2",
+          "type": "text",
+          "label": "Section Top Space",
+		  "default": "80"
+      	},
+		{
+          "id": "sectionBlockMarginBottom2",
+          "type": "text",
+          "label": "Section Bottom Space",
+		  "default": "80"
+      	},
+		{
+          "id": "sectionBlockButtonText2",
+          "type": "text",
+          "label": "Section Button Text",
+		  "default": "Learn More"
+      	},
+		{
+          "id": "sectionBlockButtonLink2",
+          "type": "url",
+          "label": "Button Link"
+      	},
+		{
+          "id": "sectionVisibility2",
+          "type": "checkbox",
+          "label": "Show This Section",
+		  "default": true
+      	}
+	]
+}
+{% endschema %}
+
+<style>
+  .content-block-wrap2 {
+    padding-top: {{section.settings.sectionBlockMarginTop2}}px;
+    padding-bottom: {{section.settings.sectionBlockMarginBottom2}}px;
+  }
+  .content-block-wrap2 .txt-space {
+    padding-left:{{section.settings.sectionBlockTextSpaceLeft2}}px;
+    padding-right:{{section.settings.sectionBlockTextSpaceRight2}}px;
+    text-align: {{section.settings.sectionBlockTextAlignment2}};
+  }
+  .content-block-wrap2.image-left .col-txt {order: 2;}
+  .content-block-wrap2.image-left .col-img {order: 1;}
+  .content-block-wrap2.image-right .col-txt {order: 1;}
+  .content-block-wrap2.image-right .col-img {order: 2;}
+</style>
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

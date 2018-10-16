@@ -1,0 +1,46 @@
+{% include "snip-name" %}
+
+
+conditional usage
+-----------------
+{% if product.handle contains “coffee-cup” %}
+{% include “special-offer” %}
+{% endif %}
+
+products collection
+-------------------
+snip-collection-product-list.liquid
+
+<ul>
+{% for product in collections.all.products %}
+<li><a href= "{{ product.url}}">{{ product.title}}</a>
+{% endfor %}
+<ul>
+
+call it like
+{% include "snip-collection-product-list" %}
+
+
+individual product collection
+-----------------------------
+<ul>
+{% for product in collection-product-list %}
+<li><a href= "{{ product.url}}">{{ product.title}}</a>
+{% endfor %}
+<ul>
+
+
+
+limit
+-----
+
+<ul>
+{% for product in collection-product-list limit: limit_count %}
+<li><a href= "{{ product.url }}">{{ product.title }}</a> 
+{% endfor %}
+</ul>
+
+snippets usage
+---------------
+https://www.shopify.com/partners/blog/88186566-tips-for-using-snippets-in-your-shopify-theme
+
