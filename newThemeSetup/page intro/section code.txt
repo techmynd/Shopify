@@ -1,0 +1,101 @@
+<div class="pgIntro">
+  	<div class="{{section.settings.sectionOneWrapper}}">
+		<h2>{{ section.settings.sectionOneTitle }}</h2>
+    	<div class="section-details">{{ section.settings.sectionOneDetail }}</div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Page Intro",
+    "settings": [
+		{
+          "id": "sectionOneTitle",
+          "type": "text",
+          "label": "Section Title",
+          "default": "About The Page"
+      	},
+		{
+          "id": "sectionOneDetail",
+          "type": "textarea",
+          "label": "Section Details",
+		  "default": "Lorem ipsum dolor set amet ..."
+      	},
+		{
+          "id": "sectionOneHeadingFontSize",
+          "type": "text",
+          "label": "Heading Font Size",
+		  "default": "40"
+      	},
+		{
+          "id": "sectionOneFontSize",
+          "type": "text",
+          "label": "Text Font Size",
+		  "default": "16"
+      	},
+		{
+          "id": "sectionOneAlignment",
+          "type": "select",
+		  "options": [
+          	{ "value": "center", "label": "Center"},
+            { "value": "left", "label": "Left"},
+            { "value": "right", "label": "Right"}
+   		  ],
+		  "label": "Text Alignment"	
+      	},
+		{
+          "id": "sectionOneMargin",
+          "type": "text",
+          "label": "Section Top & Bottom Margin",
+		  "default": "80"
+      	},
+		{
+          "id": "sectionOneBottomMargin",
+          "type": "select",
+		  "options": [
+          	{ "value": "", "label": "Yes"},
+            { "value": "padding-bottom:0px", "label": "No"}
+   		  ],
+		  "label": "Use Bottom Margin"	
+      	},
+		{
+          "id": "sectionOneBgColor",
+          "type": "color",
+          "label": "Section Background Color",
+		  "default": "#ffffff"
+      	},
+		{
+          "id": "sectionOneWrapper",
+          "type": "select",
+		  "options": [
+          	{ "value": "container", "label": "Container"},
+            { "value": "container-fluid", "label": "Container Fluid"},
+            { "value": "full-width", "label": "Full Width"}
+   		  ],
+		  "label": "Section Wrapper"	
+      	}
+	]
+  }
+{% endschema %}
+
+<style>
+  .pgIntro {
+  	padding: {{ section.settings.sectionOneMargin }}px 0;
+    {{ section.settings.sectionOneBottomMargin }};
+    background-color: {{ section.settings.sectionOneBgColor }};
+  }
+  .pgIntro h2 {
+	font-size: {{ section.settings.sectionOneHeadingFontSize }}px;
+	text-align: {{ section.settings.sectionOneAlignment }};
+}
+.pgIntro .section-details {
+	font-size: {{ section.settings.sectionOneFontSize }}px;
+    text-align: {{ section.settings.sectionOneAlignment }};
+}
+</style>  
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

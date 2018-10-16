@@ -1,0 +1,319 @@
+INPUT TYPES
+============
+
+text
+textarea
+image_picker
+radio
+select
+checkbox
+range
+
+color
+font_picker
+collection
+product
+blog
+page
+link_list
+url
+video_url
+richtext
+html
+article
+
+
+
+https://help.shopify.com/en/themes/development/theme-editor/settings-schema#attributes-for-input-settings
+
+
+attributes for inputs
+=====================
+
+type	required
+id	required > The unique name for this setting. The id is exposed to the liquid templates via the settings object. It must only contain alphanumeric characters, underscores, and dashes.
+label	required
+placeholder
+default
+info
+
+=====================
+
+links in inputs / checkbox with a label and link
+================
+
+{
+  "type": "checkbox",
+  "id": "favicon_enable",
+  "label": "Use [custom icon](https://en.wikipedia.org/wiki/Favicon)"
+}
+
+======================
+
+
+
+text
+
+{
+   "type":      "text",
+   "id":        "id",
+   "label":     "Text",
+   "default":   "value",
+   "info":      "Text",
+   "placeholder": "Text"
+}
+
+{
+   "type": "text",
+   "id": "footer_linklist_title",
+   "default": "Quick links",
+   "label": "Footer link list heading"
+}
+
+
+textarea
+
+
+
+{
+   "type":      "textarea",
+   "id":        "id",
+   "label":     "Text",
+   "default":   "value",
+   "info":      "Text",
+   "placeholder": "Text"
+}
+
+
+{
+   "type": "textarea",
+   "id": "home_welcome_message",
+   "default": "Welcome to my shop!",
+   "label": "Welcome message"
+}
+
+
+image picker
+
+
+
+{
+  "name": "Logo",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo image"
+    }
+  ]
+}
+
+
+
+radio
+
+
+
+{
+   "type":      "radio",
+   "id":        "id",
+   "label":     "Text",
+   "options": [
+     { "value": "one", "label": "Radio one" },
+     { "value": "two", "label": "Radio two" }
+   ],
+   "default":   "one",
+   "info":      "Text"
+}
+
+
+
+{
+   "type": "radio",
+   "id": "icon_cart",
+   "options": [
+      { "value": "none", "label": "None"},
+      { "value": "light", "label": "Light"},
+      { "value": "dark", "label": "Dark"}
+   ],
+   "label": "Cart icon"
+}
+
+
+
+
+
+drop down
+
+
+{
+   "type":      "select",
+   "id":        "id",
+   "label":     "Text",
+   "options": [
+     {
+       "group": "value",
+       "value": "value",
+       "label": "Text"
+     },
+     {
+       "group": "value",
+       "value": "value",
+       "label": "Text"
+     }
+   ],
+   "default":   "value",
+   "info":      "Text"
+}
+
+
+
+
+
+{
+   "type": "select",
+   "id": "products_per_page",
+   "options": [
+      { "value": "8", "label": "8 Products"},
+      { "value": "12", "label": "12 Products"},
+      { "value": "16", "label": "16 Products"}
+   ],
+   "label": "Products per page"
+}
+
+
+
+
+
+checkbox
+
+
+
+
+{
+   "type":      "checkbox",
+   "id":        "id",
+   "label":     "Text",
+   "default":   false,
+   "info":      "Text"
+}
+
+
+
+
+
+{
+   "type": "checkbox",
+   "id": "collection_sort",
+   "default": true,
+   "label": "Enable sorting"
+}
+
+
+
+range
+
+
+
+{
+    "type":   "range",
+    "id":     "id",
+    "min":       "value",
+    "max":       "value",
+    "step":      "value",
+    "unit":      "Text",
+    "label":     "Text",
+    "default":   "value"
+}
+
+
+
+
+{
+    "type":      "range",
+    "id":        "font_size",
+    "min":       12,
+    "max":        18,
+    "step":       1,
+    "unit":       "px",
+    "label":     "Font size",
+    "default":   16
+}
+
+
+
+
+
+
+
+
+
+
+
+
+color
+
+{
+   "type": "color",
+   "id": "background_color",
+   "label": "Background color",
+   "default": "#ffffff"
+}
+
+font picker
+
+{
+    "name": "Typography",
+    "settings": [
+        {
+            "type":    "font_picker",
+            "label":   "Heading font",
+            "id":      "heading_font",
+            "default": "helvetica_n4"
+        }
+    ]
+}
+
+
+url
+
+{
+  "id": "banner_call_to_action",
+  "type": "url",
+  "label": "Banner button link"
+}
+
+<a href="{{ settings.banner_call_to_action }}">Get started</a>
+
+
+
+rich text editor
+
+{
+   "type": "richtext",
+   "id": "column_richtext",
+   "label": "Text",
+   "default": "<p>Default <em>richtext</em> <a href=\"https://example.com/\">content</a></p>"
+}
+example
+{
+   "column_richtext": "<p>Content for <strong>richtext</strong> <a href=\"https://example.com/\">setting</a></p>"
+}
+with liquid
+<div class="rte">{{ settings.column_text }}</div>
+
+
+html area
+
+{
+   "type": "html",
+   "id": "html_area",
+   "label": "Custom HTML",
+   "default": "<div><p>Some HTML content</p></div>"
+}
+
+{
+   "html_area": "<h1>A heading</h1><p>A paragraph</p>"
+}
+
+<div class="html-text">{{ settings.md_area }}</div>

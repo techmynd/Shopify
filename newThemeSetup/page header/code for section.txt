@@ -1,0 +1,84 @@
+{% if section.settings.pgheader %}
+  <div id="pg-header-wrap">
+      <div class="pg-header" style="height:{{section.settings.pgHeaderHeight}}vh; background-image: url('{{ section.settings.pgheaderbg | img_url: '1600x' }}');">
+        <div class="overlay" style="background-color: {{ section.settings.pgHeaderBgColor }}; opacity: 0.{{ section.settings.pgHeaderBgColorOpacity }};"></div>
+        <div class="txt-header" style="color: {{section.settings.pgHeaderTxtColor}};">
+          {% if section.settings.pgheader != blank %}
+          	<h2>{{ section.settings.pgheader }}</h2>
+          {% endif %}
+          {% if section.settings.pgHeaderSecondaryText != blank %}
+          	<p style="color: {{section.settings.pgHeaderTxtColor}};">{{section.settings.pgHeaderSecondaryText}}</p>
+          {% endif %}
+        </div>
+        
+        {% comment %}
+          {% if section.settings.pgheaderbg != blank %}
+            <img src="{{ section.settings.pgheaderbg | img_url: '1600x' }}">
+          {% endif %}
+        {% endcomment %}
+        
+      </div>
+  </div>
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "Page Header",
+    "settings": [
+		{
+          "id": "pgheader",
+          "type": "text",
+          "label": "Main Caption",
+          "default": "About Page"
+      	},
+		{
+          "id": "pgHeaderSecondaryText",
+          "type": "textarea",
+          "label": "Secondary Caption"
+      	},
+		{
+          "id": "pgheaderbg",
+          "type": "image_picker",
+          "label": "Background Image"
+      	},
+		{
+          "id": "pgHeaderHeight",
+          "type": "text",
+          "label": "Header Height (0 to 100)",
+          "default": "100"
+      	},
+		{
+          "id": "pgHeaderTxtColor",
+          "type": "color",
+          "label": "Caption Color",
+          "default": "#ffffff"
+      	},
+		{
+          "id": "pgHeaderBgColor",
+          "type": "color",
+          "label": "Overlay Color",
+          "default": "#000000"
+      	},
+		{
+          "id": "pgHeaderBgColorOpacity",
+          "type": "range",
+		  "min": 1,
+		  "max": 9,
+		  "default": 5,
+          "label": "Overlay Depth"
+      	}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+  .main-content {
+      padding-top: 0;
+  }
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+

@@ -1,6 +1,14 @@
-{% comment %}JavaScript Resources //jQuery was added above {% endcomment %}
-<script src="{{ 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js' }}" defer="defer"></script>
-<script src="{{ 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js' }}" defer="defer"></script>
-<script src="{{ 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' }}" defer="defer"></script>
+{% comment %}JavaScript Resources // jQuery was added above{% endcomment %}
+  <script src="{{ 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js' }}" defer="defer"></script>
+  <script src="{{ 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js' }}" defer="defer"></script>
+  <script src="{{ 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' }}" defer="defer"></script>
+  {% comment %}custom.js.liquid{% endcomment %}
+  <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
+
+
+
+
+call custom.js.liquid like this
 <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
+
 

@@ -1,0 +1,110 @@
+scss or css should have liquid extension to work
+================================================
+call scss or css in theme like this
+
+{{ 'my.css' | asset_url | stylesheet_tag }}
+{{ 'my.scss.css' | asset_url | stylesheet_tag }}
+
+=================================================
+
+h1, h2, h3, h4, h5, h6 {
+  color: {{ settings.color_heading }};
+}
+
+This is the code that assumes that you have defined it in settings_schema.json
+
+{
+    "name": "Theme Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Main Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_heading",
+        "label": "Headings",
+        "default": "#3d4246"
+      },
+      {
+        "type": "color",
+        "id": "color_link",
+        "label": "Links",
+        "default": "#2980b9"
+      },
+      {
+        "type": "color",
+        "id": "color_body",
+        "label": "Body text",
+        "default": "#788188"
+      },
+      {
+        "type": "color",
+        "id": "color_hero",
+        "label": "Hero Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_sale",
+        "label": "Sale text",
+        "default": "#2980b9"
+      },
+      {
+        "type": "color",
+        "id": "color_borders",
+        "label": "Borders and lines",
+        "default": "#e8e9eb"
+      }
+    ]
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$color-link: {{ settings.color_link }};
+
+a {
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: darken($color-link, 20%);
+    text-decoration: underline;
+  }
+}
+
+
+
+
+section based css variables
+----------------------------
+{% stylesheet %}{% endstylesheet %}
+not in  style sheet tags but use below code under the the section code
+
+
+<style>
+.pgIntro h2 {
+	font-size: {{ section.settings.sectionOneHeadingFontSize }}px;
+	text-align: {{ section.settings.sectionOneAlignment }};
+}
+.pgIntro .section-details {
+	font-size: {{ section.settings.sectionOneFontSize }}px;
+    text-align: {{ section.settings.sectionOneAlignment }};
+}
+</style>  
+
+
+

@@ -1,0 +1,44 @@
+footer.liquid
+=============
+{{ settings.copyrights_info }}
+
+
+
+in settings_schema.json
+========================
+{
+    "name": {
+      "de": "Copyrights Info",
+      "en": "Copyrights Info",
+      "es": "Copyrights Info",
+      "fr": "Copyrights Info",
+      "it": "Copyrights Info",
+      "ja": "Copyrights Info",
+      "pt-BR": "Copyrights Info"
+    },
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "copyrights_info",
+        "label": {
+          "de": "Copyrights Info",
+          "en": "Copyrights Info",
+          "es": "Copyrights Info",
+          "fr": "Copyrights Info",
+          "it": "Copyrights Info",
+          "ja": "Copyrights Info",
+          "pt-BR": "Copyrights Info"
+        },
+        "info": {
+          "de": "Edit shop copyrights information",
+          "en": "Edit shop copyrights information",
+          "es": "Edit shop copyrights information",
+          "fr": "Edit shop copyrights information",
+          "it": "Edit shop copyrights information",
+          "ja": "Edit shop copyrights information",
+          "pt-BR": "Edit shop copyrights information"
+        }
+      }
+    ]
+  }
+

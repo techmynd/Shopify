@@ -4,7 +4,18 @@
   {{ 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css' | stylesheet_tag }}
   {{ 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' | stylesheet_tag }}
 
-{% comment %}Main CSS File{% endcomment %}
-{{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+  {% comment %}Main CSS File{% endcomment %}
+  {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+  {% comment %}custom.scss.liquid{% endcomment %}
+  {{ 'custom.scss.css' | asset_url | stylesheet_tag }}
   
-<script src="{{ 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' }}" defer="defer"></script>
+  {% comment %}jQuery{% endcomment %}
+  <script src="{{ 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' }}" defer="defer"></script>
+
+
+
+
+
+
+call custom.scss.liquid in theme like this
+{{ 'custom.scss.css' | asset_url | stylesheet_tag }}

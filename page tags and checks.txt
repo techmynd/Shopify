@@ -1,0 +1,237 @@
+theme tags
+-----------
+https://help.shopify.com/en/themes/liquid/tags/theme-tags
+liquid tags
+-----------
+https://help.shopify.com/en/themes/liquid/tags#include
+
+comment
+-------
+{% comment %}
+...
+{% endcomment %}.
+
+
+
+include
+-------
+{% include 'my-snippet-file' %}
+
+
+
+snippets and vars
+------------------
+{% assign my_variable = 'apples' %}
+{% assign my_second_variable = 'oranges' %}
+{% include 'snippet' %}
+
+
+insert section
+--------------
+{% section 'header' %}
+
+
+if template name check
+----------------------
+{% if template.name == 'product' %}
+We are on a product page!
+{% endif %}
+
+
+style in section
+----------------
+{% style %}
+  .hero__background-color-container {
+    background-color: {{ section.settings.background_color }}
+  }
+{% endstyle %}
+
+
+JS
+---
+{% javascript %}
+  $('.slideshow').slideshow();
+{% endjavascript %}
+
+
+sections
+---------
+https://help.shopify.com/en/themes/development/sections
+
+
+schema
+-------
+
+{% schema %}
+  {
+    "name": "Slideshow",
+    "settings": [
+      {
+        "id": "header",
+        "type": "text",
+        "label": "Header",
+        "default": "Hello world"
+      }
+    ]
+  }
+{% endschema %}
+
+
+
+
+
+
+title and content
+------------------
+{% assign page = pages[settings.fp_page] %}
+{% unless page == empty and page.title == blank %}
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.content }}</p>
+{% endunless %}
+
+
+before text output check if its not blank
+----------------------------------------
+{% assign heading = settings.heading %}
+{% unless heading == blank %}
+  <h1>{{ heading }}</h1>
+{% endunless %}
+
+
+collection
+------------
+{% assign collection = collections[settings.collection] %}
+{% unless collection == empty %}
+  {% for product in collection.products %}
+    {% include 'product-item' %}
+  {% endfor %}
+{% endunless %}
+
+
+{{ asset_url }}
+
+tags
+----
+
+Assign
+------
+{% assign favorite_food = 'apples' %}
+My favorite food is {{ favorite_food }}
+
+if else
+-------
+{% assign first_time_visitor = true %}
+{% if first_time_visitor == true %}
+  Welcome to the site!
+{% endif %}
+
+
+increment - starting with 0
+---------------------------
+<ul>
+  <li class="item-{% increment counter %}">apples</li>
+  <li class="item-{% increment counter %}">oranges</li>
+  <li class="item-{% increment counter %}">peaches</li>
+  <li class="item-{% increment counter %}">plums</li>
+</ul>
+
+
+for 
+----
+{% for product in collection.products %}
+  {{ product.title }}
+{% endfor %}
+
+else
+----
+{% for product in collection.products %}
+  {{ product.title }}
+{% else %}
+  The collection is empty.
+{% endfor %}
+
+break
+-----
+{% for i in (1..5) %}
+  {% if i == 4 %}
+    {% break %}
+  {% else %}
+    {{ i }}
+  {% endif %}
+{% endfor %}
+
+
+continue
+--------
+{% for i in (1..5) %}
+  {% if i == 4 %}
+    {% continue %}
+  {% else %}
+    {{ i }}
+  {% endif %}
+{% endfor %}
+
+
+
+limit
+-----
+{% for item in numbers limit:2 %}
+   {{ item }}
+{% endfor %}
+
+offset
+------
+{% for item in numbers offset:2 %}
+    {{ item }}
+{% endfor %}
+
+output > 3 4 5 6
+
+
+more itterations
+----------------
+https://help.shopify.com/en/themes/liquid/tags/iteration-tags
+
+
+if / elseif
+------------
+{% if product.title == 'Awesome Shoes' %}
+  You are buying some awesome shoes!
+{% endif %}
+
+{% if shipping_method.title == 'International Shipping' %}
+  You're shipping internationally. Your order should arrive in 2–3 weeks.
+{% elsif shipping_method.title == 'Domestic Shipping' %}
+  Your order should arrive in 3–4 days.
+{% else %}
+  Thank you for your order!
+{% endif %}
+
+
+unless
+------
+{% unless product.title == 'Awesome Shoes' %}
+  You are not buying awesome shoes.
+{% endunless %}
+
+
+case?/?when
+-----------
+{% case shipping_method.title %}
+  {% when 'International Shipping' %}
+     You're shipping internationally. Your order should arrive in 2–3 weeks.
+  {% when 'Domestic Shipping' %}
+    Your order should arrive in 3–4 days.
+  {% when 'Local Pick-Up' %}
+    Your order will be ready for pick-up tomorrow.
+  {% else %}
+     Thank you for your order!
+{% endcase %}
+
+
+more control flow tags
+----------------------
+https://help.shopify.com/en/themes/liquid/tags/control-flow-tags
+
+
+
