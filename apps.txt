@@ -1,0 +1,255 @@
+Shopify Free Useful Apps
+========================
+
+Marketing / Mailing Lists / SEO / Subscriptions
+===============================================
+
+FavSEO (SEO Audit)
+https://apps.shopify.com/favseo
+
+Easy SEO - SEO Made Easier
+https://apps.shopify.com/easy-seo
+
+SEO - All in One
+https://apps.shopify.com/seo-all-in-one
+
+klaviyo Email Marketing
+https://apps.shopify.com/klaviyo-email-marketing
+
+Instagram shop by Snapppt (Shoppable Galleries)
+https://apps.shopify.com/instagram-shop-by-snapppt
+
+Free Persistent Cart App (Remember customers' carts across their devices)
+https://apps.shopify.com/remember-my-cart
+
+MailChimp (Mailing Lists)
+https://apps.shopify.com/chimpified
+
+PlugIn SEO
+https://apps.shopify.com/plug-in-seo
+
+Flexify: Facebook Product Feed
+https://apps.shopify.com/facebook-product-catalog
+
+Facebook Store (Sell on Facebook)
+https://apps.shopify.com/facebook-store
+
+FaceBook Messenger Platform (Facebook Messenger )
+https://mobilemonkey.com
+
+Messenger (Facebook Messenger)
+https://apps.shopify.com/messenger
+
+Facebook Chat (Facebook Messenger - Live chat )
+https://apps.shopify.com/facebook-live-chat
+
+SEO Image Optimizer
+https://apps.shopify.com/seo-image-optimizer
+
+Alt Text (Image alt text)
+https://apps.shopify.com/alt-text
+
+Memberships and subscriptions 
+https://apps.shopify.com/charge-rabbit
+
+Instafeed (Instagram Feed)
+https://apps.shopify.com/instafeed
+
+
+
+
+Product Reviews
+===============
+
+Product Reviews
+https://apps.shopify.com/product-reviews
+
+Yotpo
+https://apps.shopify.com/yotpo-social-reviews
+
+
+
+Social Apps
+===========
+
+Social Media Stream (From social networks)
+https://apps.shopify.com/stream
+
+
+
+Coupons / Discounts
+===================
+
+Better Coupon Box (Discount for following social profile)
+https://apps.shopify.com/better-coupon-box
+
+Bulk Discounts
+https://apps.shopify.com/bulk-discounts
+
+Automated Discounts
+https://apps.shopify.com/automatic-discount-rules
+
+
+
+Tracking
+========
+
+AfterShip (track shipments for customers)
+https://apps.shopify.com/aftership
+
+
+
+Printing and Receipts
+======================
+
+Order Printer
+https://apps.shopify.com/order-printer
+
+Receiptful
+https://apps.shopify.com/receiptful
+
+Order Printer
+https://apps.shopify.com/order-printer
+
+
+
+
+Shipment and Returns
+====================
+
+AfterShip Returns
+https://apps.shopify.com/returns-center-by-aftership
+
+Easyship (worldwide shipment)
+https://apps.shopify.com/easyship
+
+Shippo
+https://apps.shopify.com/shippo
+
+Free Shipping bar
+https://apps.shopify.com/free-shipping-bar
+
+
+
+Security
+========
+
+McAfee Secure
+https://apps.shopify.com/mcafee-secure
+
+Fraud Filter
+https://apps.shopify.com/fraud-filter
+
+Trust Hero
+https://apps.shopify.com/trust-hero
+
+
+
+Notifications
+=============
+
+PushOwl Web Push Notifications
+https://apps.shopify.com/pushowl
+
+Web Browser Push Notification
+https://apps.shopify.com/firepush
+
+Recover Cart Pusher
+https://apps.shopify.com/recover-cart-pusher
+
+
+
+POPUPS and CTA
+==============
+
+Sales Pop - Sales Notification
+https://apps.shopify.com/sales-pop
+
+Privy (exit popups and popups)
+https://apps.shopify.com/privy
+
+
+
+Most Useful
+===========
+
+Rewind Backups (Automated Store Backup)
+https://apps.shopify.com/backup
+
+Cart2Cart Store Migration App (Shopify Migration)
+https://apps.shopify.com/cart2cart-shopify-migration-module
+
+Easy Redirects by ESC
+https://apps.shopify.com/easyredirects
+
+Smart Social Login
+https://apps.shopify.com/smart-social-login
+
+Auto Currency Switcher
+https://apps.shopify.com/auto-currency-switcher
+
+Infinite Options <<<< unlimited opions and variants
+https://apps.shopify.com/custom-options
+
+Product Options <<<< unlimited opions and variants
+https://apps.shopify.com/product-options-by-hulkapps-1
+
+HelpCenter (FAQs Page)
+https://apps.shopify.com/helpcenter
+
+Scroll to Top
+https://apps.shopify.com/scroll-to-the-top
+
+Countdown Cart
+https://apps.shopify.com/countdown-cart
+
+Bulk Image Edit - Image SEO
+https://apps.shopify.com/bulk-image-edit
+
+tawk.to Live Chat
+https://apps.shopify.com/tawk-to
+
+
+
+
+
+Functionalities
+===============
+
+Google Shopping
+https://apps.shopify.com/google-shopping
+
+Improved Contact Form (visitor tracking)
+https://apps.shopify.com/improved-contact-form
+
+Kit
+https://apps.shopify.com/kit
+
+Smile: Rewards & Loyalty
+https://apps.shopify.com/smile-io
+
+Mobile Converter
+https://apps.shopify.com/mobile-web-boost
+
+Personalized Recommendation
+https://apps.shopify.com/product-recommendation
+
+Happy Email (Welcome Emails for new customer)
+https://apps.shopify.com/beeketing
+
+
+
+Not Relevant but Useful
+=======================
+
+Digital Downloads
+https://apps.shopify.com/digital-downloads
+
+Oberlo (Find Products to Sell / Dropshipping)
+https://apps.shopify.com/oberlo
+
+Printful (Print Your Designs)
+https://apps.shopify.com/printful
+
+eBay Importer
+https://apps.shopify.com/ebay-importer
