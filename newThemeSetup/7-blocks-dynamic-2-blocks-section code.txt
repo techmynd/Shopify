@@ -1,0 +1,59 @@
+
+  {% for block in section.blocks %}
+    <div>{{ block.settings.ctaOneTitle }}</div>
+    <div>{{ block.settings.ctaOneTitle2 }}</div>
+  {% endfor %}
+
+
+
+
+{% schema %}
+{
+	"name": "Gallery",
+    "blocks": [
+
+      {
+		"type": "gbone",
+        "name": "Gallery Block One",
+		"limit": 2,
+        "settings": [
+            {
+              "id": "ctaOneTitle",
+              "type": "text",
+              "label": "CTA Title"
+            },
+			{
+              "id": "img1",
+              "type": "image_picker",
+              "label": "Image"
+            }
+        ]
+      },
+	  {
+		"type": "gbtwo",
+        "name": "Gallery Block Two",
+		"limit": 2,
+        "settings": [
+            {
+              "id": "ctaOneTitle2",
+              "type": "text",
+              "label": "CTA Title2"
+            },
+			{
+              "id": "img2",
+              "type": "image_picker",
+              "label": "Image"
+            }
+        ]
+      }	
+	
+	]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

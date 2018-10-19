@@ -1,0 +1,154 @@
+// Custom Grid Starts
+
+$cp-gutter-space: 0.5rem;
+.cp-grid-wrap {
+	text-align: center;
+	display: block;
+	.cp-grid {
+		display: block;
+		margin: 0 auto;
+		padding-left: $cp-gutter-space *2;
+		padding-right: $cp-gutter-space *2;
+		padding-bottom: $cp-gutter-space;
+		padding-top: $cp-gutter-space;
+		.cp-row {
+			display: flex;	
+			flex-wrap: wrap;
+			flex-direction: row;
+			margin-left: -$cp-gutter-space;
+			margin-right: -$cp-gutter-space;
+			.cp-col-12, .cp-col-11, .cp-col-10, .cp-col-9, .cp-col-8, .cp-col-7, .cp-col-6, .cp-col-5, .cp-col-4, 
+			.cp-col-3, .cp-col-2, .cp-col-1 {
+				background-color: #ccc;
+				padding: $cp-gutter-space;
+				
+				// margin-left: $cp-gutter-space;
+				// margin-right: $cp-gutter-space;
+				// margin-bottom: ($cp-gutter-space *2);
+				// margin-top: ($cp-gutter-space *2);
+
+				margin: $cp-gutter-space;
+
+				min-height: 100px;
+				height: 50vh;
+
+				display: flex;	
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			.cp-col-12 {
+				flex-basis: calc(100% - (#{$cp-gutter-space} *2) );
+				height: 80vh;
+			}
+			.cp-col-11 {
+				flex-basis: calc(91.66666667% - (#{$cp-gutter-space} *2) );
+				height: 50vh;
+				@media all and (max-width: 900px) {
+					flex-basis: calc(50% - (#{$cp-gutter-space} *2) );
+				}
+				@media all and (max-width: 600px) {
+					flex-basis: calc(100% - (#{$cp-gutter-space} *2) );
+				}
+			}
+			.cp-col-10 {
+				flex-basis: calc(83.33333333% - (#{$cp-gutter-space} *2) );
+				height: 50vh;
+				@media all and (max-width: 900px) {
+					flex-basis: calc(50% - (#{$cp-gutter-space} *2) );
+				}
+				@media all and (max-width: 600px) {
+					flex-basis: calc(100% - (#{$cp-gutter-space} *2) );
+				}
+			}
+			.cp-col-9 {
+				flex-basis: calc(75% - (#{$cp-gutter-space} *2) );
+				height: 50vh;
+				@media all and (max-width: 900px) {
+					flex-basis: calc(50% - (#{$cp-gutter-space} *2) );
+				}
+				@media all and (max-width: 600px) {
+					flex-basis: calc(100% - (#{$cp-gutter-space} *2) );
+				}
+			}
+			.cp-col-8 {
+				// 100/12*8 // 66.7%
+				flex-basis: calc( 66.66666667% - (#{$cp-gutter-space} *2) );
+				@media all and (max-width: 900px) {
+					flex-basis: calc(50% - (#{$cp-gutter-space} *2) );
+				}
+				@media all and (max-width: 600px) {
+					flex-basis: calc(100% - (#{$cp-gutter-space} *2) );
+				}
+			}
+			.cp-col-7 {
+				flex-basis: calc(58.33333333% - (#{$cp-gutter-space} *2) );
+				height: 50vh;
+				@media all and (max-width: 900px) {
+					flex-basis: calc(50% - (#{$cp-gutter-space} *2) );
+				}
+				@media all and (max-width: 600px) {
+					flex-basis: calc(100% - (#{$cp-gutter-space} *2) );
+				}
+			}
+			.cp-col-6 {
+				flex-basis: calc(50% - (#{$cp-gutter-space} *2) );
+				@media all and (max-width: 600px) {
+					flex-basis: calc(100% - (#{$cp-gutter-space} *2) );
+				}
+			}
+			.cp-col-5 {
+				flex-basis: calc(41.66666667% - (#{$cp-gutter-space} *2) );
+				height: 50vh;
+				@media all and (max-width: 900px) {
+					flex-basis: calc(50% - (#{$cp-gutter-space} *2) );
+				}
+				@media all and (max-width: 600px) {
+					flex-basis: calc(100% - (#{$cp-gutter-space} *2) );
+				}
+			}
+			.cp-col-4 {
+				flex-basis: calc(33.3% - (#{$cp-gutter-space} *2) );
+				@media all and (max-width: 900px) {
+					flex-basis: calc(50% - (#{$cp-gutter-space} *2) );
+				}
+				@media all and (max-width: 600px) {
+					flex-basis: calc(100% - (#{$cp-gutter-space} *2) );
+				}
+			}
+			
+			.cp-col-3 {
+				flex-basis: calc(25% - (#{$cp-gutter-space} *2) );
+				height: 50vh;
+				@media all and (max-width: 900px) {
+					flex-basis: calc(50% - (#{$cp-gutter-space} *2) );
+				}
+				@media all and (max-width: 600px) {
+					flex-basis: calc(100% - (#{$cp-gutter-space} *2) );
+				}
+			}
+			.cp-col-2 {
+				flex-basis: calc(16.66666667% - (#{$cp-gutter-space} *2) );
+				height: 50vh;
+				@media all and (max-width: 900px) {
+					flex-basis: calc(50% - (#{$cp-gutter-space} *2) );
+				}
+				@media all and (max-width: 600px) {
+					flex-basis: calc(100% - (#{$cp-gutter-space} *2) );
+				}
+			}
+			.cp-col-1 {
+				flex-basis: calc(8.33333333% - (#{$cp-gutter-space} *2) );
+				height: 50vh;
+				@media all and (max-width: 900px) {
+					flex-basis: calc(50% - (#{$cp-gutter-space} *2) );
+				}
+				@media all and (max-width: 600px) {
+					flex-basis: calc(100% - (#{$cp-gutter-space} *2) );
+				}
+			}
+		}
+	}
+}
+
+// Custom Grid Ends

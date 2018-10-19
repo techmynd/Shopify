@@ -1,0 +1,58 @@
+<div class="cp-grid-wrap">
+	<div class="cp-grid">
+      <div class="cp-row">
+        {% for block in section.blocks %}
+        <div class="cp-img-bg-full cp-col-{{ block.settings.block-width }}" style="height: {{ block.settings.block-height }}vh; background-image: url('{{ block.settings.block-image | img_url: '1600x' }}');">
+			{% comment %}silence is golden{% endcomment %}
+        </div>
+        {% endfor %}
+      </div>
+  </div>
+</div>  
+
+{% schema %}
+{
+	"name": "Gallery",
+    "blocks": [
+
+      {
+		"type": "gallery-block",
+        "name": "Gallery Block",
+		"limit": 12,
+        "settings": [
+            {
+              "id": "block-width",
+              "type": "text",
+              "label": "Block Width (1 to 12)",
+              "default": "12",  
+			  "info": "12 > 100%, 6 > 50%. 12 Columns can be placed in a row. Width is divided into 12 Screen Columns"
+            },
+			{
+              "id": "block-height",
+              "type": "text",
+              "label": "Block Height (e.g. 100 or 50)",
+              "default": "50",
+              "info" :"100 > 100%, 50 > 50%, 10 > 10% Screen Height"
+            },
+			{
+              "id": "block-image",
+              "type": "image_picker",
+              "label": "Block Image"
+            }
+        ]
+      }
+	
+	]
+}
+
+{% endschema %}
+
+{% stylesheet %}
+.cp-img-bg-full {
+	background-size: cover;
+    background-position: 50% 50%;
+}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

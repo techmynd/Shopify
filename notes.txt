@@ -39,6 +39,33 @@ other commands
 https://localhost:3002
 
 
+===========================
+help urls
+=========
+
+url filters
+https://help.shopify.com/en/themes/liquid/filters/url-filters#asset_img_url
+
+theme settings
+https://help.shopify.com/en/themes/development/theme-editor/settings-schema#sidebar-settings
+
+blocks
+https://help.shopify.com/en/themes/development/sections#blocks
+https://ecommerce.shopify.com/c/ecommerce-design/t/nesting-setting-blocks-462659
+https://ecommerce.shopify.com/c/ecommerce-design/t/sections-blocks-per-page-382552
+
+shopify drag to reoder custom section
+https://help.shopify.com/en/themes/development/sections
+https://ecommerce.shopify.com/c/ecommerce-design/t/sections-blocks-per-page-382552
+https://help.shopify.com/en/manual/using-themes/change-the-layout/theme-settings/sections-and-settings
+
+sections and settings
+https://help.shopify.com/en/manual/using-themes/change-the-layout/theme-settings/sections-and-settings
+
+
+
+
+
 
 
 
