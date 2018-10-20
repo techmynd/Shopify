@@ -6,6 +6,7 @@ Marketing / Mailing Lists / SEO / Subscriptions
 
 FavSEO (SEO Audit)
 https://apps.shopify.com/favseo
+not working
 
 Easy SEO - SEO Made Easier
 https://apps.shopify.com/easy-seo
@@ -15,18 +16,21 @@ https://apps.shopify.com/seo-all-in-one
 
 klaviyo Email Marketing
 https://apps.shopify.com/klaviyo-email-marketing
+not cheap
 
 Instagram shop by Snapppt (Shoppable Galleries)
 https://apps.shopify.com/instagram-shop-by-snapppt
 
 Free Persistent Cart App (Remember customers' carts across their devices)
 https://apps.shopify.com/remember-my-cart
+> Best
 
 MailChimp (Mailing Lists)
 https://apps.shopify.com/chimpified
 
 PlugIn SEO
 https://apps.shopify.com/plug-in-seo
+not free
 
 Flexify: Facebook Product Feed
 https://apps.shopify.com/facebook-product-catalog
@@ -42,6 +46,7 @@ https://apps.shopify.com/messenger
 
 Facebook Chat (Facebook Messenger - Live chat )
 https://apps.shopify.com/facebook-live-chat
+> Best
 
 SEO Image Optimizer
 https://apps.shopify.com/seo-image-optimizer
@@ -63,6 +68,7 @@ Product Reviews
 
 Product Reviews
 https://apps.shopify.com/product-reviews
+> Best
 
 Yotpo
 https://apps.shopify.com/yotpo-social-reviews
@@ -85,10 +91,11 @@ https://apps.shopify.com/better-coupon-box
 
 Bulk Discounts
 https://apps.shopify.com/bulk-discounts
+free plan
 
 Automated Discounts
 https://apps.shopify.com/automatic-discount-rules
-
+free plan
 
 
 Tracking
@@ -96,7 +103,7 @@ Tracking
 
 AfterShip (track shipments for customers)
 https://apps.shopify.com/aftership
-
+free plan
 
 
 Printing and Receipts
@@ -105,20 +112,13 @@ Printing and Receipts
 Order Printer
 https://apps.shopify.com/order-printer
 
-Receiptful
-https://apps.shopify.com/receiptful
-
-Order Printer
-https://apps.shopify.com/order-printer
-
-
-
 
 Shipment and Returns
 ====================
 
 AfterShip Returns
 https://apps.shopify.com/returns-center-by-aftership
+free plan
 
 Easyship (worldwide shipment)
 https://apps.shopify.com/easyship
@@ -136,9 +136,11 @@ Security
 
 McAfee Secure
 https://apps.shopify.com/mcafee-secure
+free plan
 
 Fraud Filter
 https://apps.shopify.com/fraud-filter
+> best
 
 Trust Hero
 https://apps.shopify.com/trust-hero
@@ -150,12 +152,15 @@ Notifications
 
 PushOwl Web Push Notifications
 https://apps.shopify.com/pushowl
+free plan
 
 Web Browser Push Notification
 https://apps.shopify.com/firepush
+free plan
 
 Recover Cart Pusher
 https://apps.shopify.com/recover-cart-pusher
+> best
 
 
 
@@ -164,9 +169,11 @@ POPUPS and CTA
 
 Sales Pop - Sales Notification
 https://apps.shopify.com/sales-pop
+> best
 
 Privy (exit popups and popups)
 https://apps.shopify.com/privy
+free plan
 
 
 
@@ -184,24 +191,29 @@ https://apps.shopify.com/easyredirects
 
 Smart Social Login
 https://apps.shopify.com/smart-social-login
+> best
 
 Auto Currency Switcher
 https://apps.shopify.com/auto-currency-switcher
 
 Infinite Options <<<< unlimited opions and variants
 https://apps.shopify.com/custom-options
+> best
 
 Product Options <<<< unlimited opions and variants
 https://apps.shopify.com/product-options-by-hulkapps-1
+> best
 
 HelpCenter (FAQs Page)
 https://apps.shopify.com/helpcenter
+> best
 
 Scroll to Top
 https://apps.shopify.com/scroll-to-the-top
 
 Countdown Cart
 https://apps.shopify.com/countdown-cart
+> best
 
 Bulk Image Edit - Image SEO
 https://apps.shopify.com/bulk-image-edit
@@ -227,6 +239,7 @@ https://apps.shopify.com/kit
 
 Smile: Rewards & Loyalty
 https://apps.shopify.com/smile-io
+free plans
 
 Mobile Converter
 https://apps.shopify.com/mobile-web-boost
@@ -236,6 +249,7 @@ https://apps.shopify.com/product-recommendation
 
 Happy Email (Welcome Emails for new customer)
 https://apps.shopify.com/beeketing
+> best
 
 
 
