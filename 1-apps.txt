@@ -193,6 +193,10 @@ Smart Social Login
 https://apps.shopify.com/smart-social-login
 > best
 
+Currency Switcher by Secomapp
+https://apps.shopify.com/currency-switcher
+> best
+
 Auto Currency Switcher
 https://apps.shopify.com/auto-currency-switcher
 
