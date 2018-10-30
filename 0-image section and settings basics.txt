@@ -203,3 +203,9 @@ was menu name / perma in admin
 </div>
 
 
+Presets
+=======
+https://www.shopify.com/partners/blog/shopify-theme-styles-and-presets
+https://www.shopify.com/partners/blog/how-to-create-your-first-shopify-theme-section
+
+settings_data.json
