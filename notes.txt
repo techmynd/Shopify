@@ -63,7 +63,12 @@ sections and settings
 https://help.shopify.com/en/manual/using-themes/change-the-layout/theme-settings/sections-and-settings
 
 
-
+https://www.shopify.com/partners/blog/creating-dynamic-color-schemes-with-theme-options-and-presets
+https://help.shopify.com/en/themes/development/theme-editor/settings-schema
+https://www.shopify.com/partners/blog/19478851-an-introduction-to-theme-options
+https://help.shopify.com/en/themes/development/theme-editor/settings-schema#attributes-for-input-settings
+https://www.shopify.com/partners/blog/shopify-section-block
+https://help.shopify.com/en/themes/development/sections
 
 
 
