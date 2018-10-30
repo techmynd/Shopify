@@ -1,0 +1,17 @@
+https://shopify.github.io/themekit/
+
+
+C:\Program Files\Theme Kit
+
+environment variable
+;C:\Program Files\Theme Kit
+
+cmd > type 
+> theme 
+and enter to verify theme kit installation
+
+more instructions here
+https://shopify.github.io/themekit/
+
+
+you can use theme kit to download upload manage themes
